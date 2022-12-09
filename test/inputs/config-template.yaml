@@ -1,0 +1,4 @@
+#@ load("@ytt:data", "data")
+---
+apiKey: #@ data.values.apiKey
+date: 2022-04-18
