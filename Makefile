@@ -34,7 +34,6 @@ endif
 endif
 	golangci-lint run
 
-API_KEY := $(or $(API_KEY), $(shell op read "op://Private/NASA API/credential"))
 test/inputs/config.yaml: test/inputs/config-template.yaml
 ifndef HAS_YTT
 ifeq ($(PLATFORM), Darwin)
@@ -49,7 +48,7 @@ endif
 endif
 
 	ytt --file test/inputs/config-template.yaml \
-		--data-value apiKey=${API_KEY} \
+		--data-value apiKey=$(or $(API_KEY), $(shell op read "op://Private/NASA API/credential")) \
 		> test/inputs/config.yaml
 
 test: deps-modules deps-ginkgo test/inputs/config.yaml
