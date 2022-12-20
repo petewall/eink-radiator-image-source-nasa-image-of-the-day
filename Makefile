@@ -42,8 +42,9 @@ ifeq ($(PLATFORM), Darwin)
 	brew install ytt
 endif
 ifeq ($(PLATFORM), Linux)
-	wget -O- https://carvel.dev/install.sh > install.sh
-	./install.sh
+	wget -O- https://carvel.dev/install.sh > /tmp/install-carvel.sh
+	chmod a+x /tmp/install-carvel.sh
+	/tmp/install-carvel.sh
 endif
 endif
 
