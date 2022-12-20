@@ -1,6 +1,7 @@
 HAS_GINKGO := $(shell command -v ginkgo;)
 HAS_GOLANGCI_LINT := $(shell command -v golangci-lint;)
 HAS_COUNTERFEITER := $(shell command -v counterfeiter;)
+HAS_YTT := $(shell command -v ytt;)
 PLATFORM := $(shell uname -s)
 
 # #### DEPS ####
@@ -35,6 +36,17 @@ endif
 
 API_KEY := $(or $(API_KEY), $(shell op read "op://Private/NASA API/credential"))
 test/inputs/config.yaml: test/inputs/config-template.yaml
+ifndef HAS_YTT
+ifeq ($(PLATFORM), Darwin)
+	brew tap vmware-tanzu/carvel
+	brew install ytt
+endif
+ifeq ($(PLATFORM), Linux)
+	wget -O- https://carvel.dev/install.sh > install.sh
+	./install.sh
+endif
+endif
+
 	ytt --file test/inputs/config-template.yaml \
 		--data-value apiKey=${API_KEY} \
 		> test/inputs/config.yaml
