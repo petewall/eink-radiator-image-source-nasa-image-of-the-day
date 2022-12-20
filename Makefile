@@ -1,3 +1,5 @@
+SHELL := /bin/bash
+
 HAS_GINKGO := $(shell command -v ginkgo;)
 HAS_GOLANGCI_LINT := $(shell command -v golangci-lint;)
 HAS_COUNTERFEITER := $(shell command -v counterfeiter;)
