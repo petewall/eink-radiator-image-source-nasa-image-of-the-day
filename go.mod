@@ -6,8 +6,8 @@ require (
 	github.com/go-task/slim-sprig v2.20.0+incompatible
 	github.com/google/pprof v0.0.0-20230323073829-e72429f035bd
 	github.com/maxbrunsfeld/counterfeiter/v6 v6.6.1
-	github.com/onsi/ginkgo/v2 v2.9.4
-	github.com/onsi/gomega v1.27.6
+	github.com/onsi/ginkgo/v2 v2.9.5
+	github.com/onsi/gomega v1.27.7
 	github.com/petewall/eink-radiator-image-source-image v0.2.40
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.15.0
