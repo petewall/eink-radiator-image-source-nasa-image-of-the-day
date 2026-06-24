@@ -59,8 +59,8 @@ github.com/pelletier/go-toml/v2 v2.2.4 h1:mye9XuhQ6gvn5h28+VilKrrPoQVanw5PMw/TB0
 github.com/pelletier/go-toml/v2 v2.2.4/go.mod h1:2gIqNv+qfxSVS7cM2xJQKtLSTLUE9V8t9Stt+h56mCY=
 github.com/petewall/eink-radiator-image-source-blank v0.1.54 h1:WmTbH0xLZSmvYk7Y/gLyOazHG3XBT2jTDicoNyIm8fs=
 github.com/petewall/eink-radiator-image-source-blank v0.1.54/go.mod h1:VWCQFINWYTPXzu+c/OKCG04l/sRyoaCa928SSi/rwts=
-github.com/petewall/eink-radiator-image-source-image v0.2.50 h1:2ppG43HxF9T1JJttCsHtzjq/gyEZxuKT6mHVyW9ZDaw=
-github.com/petewall/eink-radiator-image-source-image v0.2.50/go.mod h1:Peho3ZkajvjMo5wEs6cJpqVb+1D1r/JZf+sYkSUXIe4=
+github.com/petewall/eink-radiator-image-source-image v0.2.52 h1:tb1Ur1tgpaj9KOOz+aDXGt7xRgNrGVgv3nHL7UGF8BI=
+github.com/petewall/eink-radiator-image-source-image v0.2.52/go.mod h1:GFGipSpnFwcwh7V0XBISm0B6aShV3oKZpnjMLS+5x/8=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/rogpeppe/go-internal v1.13.1 h1:KvO1DLK/DRN07sQ1LQKScxyZJuNnedQ5/wKSR38lUII=
