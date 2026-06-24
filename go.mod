@@ -5,7 +5,7 @@ go 1.25.0
 require (
 	github.com/go-task/slim-sprig v2.20.0+incompatible
 	github.com/google/pprof v0.0.0-20260402051712-545e8a4df936
-	github.com/maxbrunsfeld/counterfeiter/v6 v6.6.2
+	github.com/maxbrunsfeld/counterfeiter/v6 v6.12.2
 	github.com/onsi/ginkgo/v2 v2.32.0
 	github.com/onsi/gomega v1.40.0
 	github.com/petewall/eink-radiator-image-source-image v0.2.50
